@@ -1,8 +1,30 @@
 # SDET Assignment - Order Management System
 
-## Overview
+## Assignment Task
 
-SDET assignment focusing on API and UI test automation with modern tools including GenAI integration.
+**Your task is to write comprehensive automated tests for this Order Management System.**
+
+This repository contains a working API server and UI application. You need to create test automation projects that thoroughly test both components:
+
+### **What You Need to Test:**
+- **API Testing**: Write tests in **Java** or **C#** using TestContainers to test the REST API
+- **UI Testing**: Write tests in **Playwright + TypeScript** to test the web interface
+- **GenAI Integration**: Use AI tools to assist with test creation and document your usage
+
+### **What's Provided:**
+- ✅ Working Node.js API server with CRUD operations
+- ✅ HTML form interface for order management
+- ✅ Docker containerization for the API
+- ✅ OpenAPI specification for API contract
+- ✅ This README with detailed requirements
+
+### **What You Need to Create:**
+- 🔨 API test project (Java/C# + TestContainers)
+- 🔨 UI test project (Playwright + TypeScript)
+- 🔨 Documentation of your GenAI tool usage
+- 🔨 Test reports and execution instructions
+
+## Overview
 
 **Tech Stack**: Java/C# + Test Containers (API) | Playwright + TypeScript (UI) | GenAI Tools
 
