@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "internal-docs", "internal-docs", "{0771999F-A876-0790-16D5-0BBFB5F6A1C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderApiTests", "internal-docs\sample-api-tests-csharp\OrderApiTests.csproj", "{8BADC208-5597-A41C-05BC-6E96BB644B7E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8BADC208-5597-A41C-05BC-6E96BB644B7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BADC208-5597-A41C-05BC-6E96BB644B7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BADC208-5597-A41C-05BC-6E96BB644B7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BADC208-5597-A41C-05BC-6E96BB644B7E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8BADC208-5597-A41C-05BC-6E96BB644B7E} = {0771999F-A876-0790-16D5-0BBFB5F6A1C0}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {35BB73C7-8F8E-4D76-B67B-4307A67193E2}
+	EndGlobalSection
+EndGlobal
