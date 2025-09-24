@@ -56,7 +56,7 @@ cd api && npm install && npm start
 
 ### 1. API Testing (60%) - Java or C#
 - **Framework**: JUnit/TestNG (Java) or NUnit/xUnit (C#)
-- **Containers**: Use test containers to containerize the API itself for integration testing
+- **Containers**: Use TestContainers to containerize the API itself for integration testing
 - **Coverage**: CRUD operations, validation, error handling, edge cases
 - **GenAI Integration**: Use AI tools for test case generation and optimization
 - **Note**: API uses in-memory storage - containerize the API service, not a database
@@ -99,11 +99,11 @@ cd api && npm install && npm start
 ### Valid Statuses
 `pending` | `processing` | `shipped` | `delivered` | `cancelled`
 
-## Test Containers Clarification
+## TestContainers Clarification
 
-**Important**: This API uses in-memory storage (no database). For test containers:
+**Important**: This API uses in-memory storage (no database). For TestContainers:
 - **Containerize the API itself** using the provided Dockerfile
-- **Use test containers to manage API container lifecycle** in your tests
+- **Use TestContainers to manage API container lifecycle** in your tests
 - **Test against the containerized API endpoint** rather than mocking
 - **Document your approach** to handling the in-memory storage limitation
 
@@ -114,15 +114,7 @@ cd api && npm install && npm start
 - **GenAI Integration (20%)**: Effective use of AI tools, documentation of usage
 - **Documentation (10%)**: Clear setup instructions, test strategy, AI tool usage
 
-## Timeline & Submission
-
-### **Timeline: 3-4 Days**
-- **Day 1**: Environment setup, API tests foundation
-- **Day 2**: Complete API tests, start UI tests
-- **Day 3**: Complete UI tests, GenAI documentation
-- **Day 4**: Final review, documentation, submission
-
-*Note: 2 days is possible for experienced candidates, but 3-4 days allows for quality implementation and proper GenAI integration.*
+## Submission
 
 ### **How to Submit**
 
@@ -144,13 +136,13 @@ cd api && npm install && npm start
 1. **Create your test projects** (separate from provided API/UI)
 2. **Implement comprehensive test suites** using specified technologies
 3. **Document GenAI tool usage**:
-   - Which AI tools were used (ChatGPT, Copilot, Claude, etc.)
+   - Which AI tools were used
    - How they were used (test generation, code review, documentation)
    - Examples of AI-generated content
    - Benefits and limitations observed
-4. **Update README** with:
+4. **Create documentation** with:
    - Setup and execution instructions
-   - Test strategy and coverage
+   - Test strategy and coverage approach
    - GenAI integration approach
    - Technology choices and rationale
 
@@ -158,11 +150,10 @@ cd api && npm install && npm start
 
 ```
 your-submission/
-├── api-tests/              # Java/C# API tests with test containers
+├── api-tests/              # Java/C# API tests
 ├── ui-tests/               # Playwright TypeScript tests
-├── genai-documentation/    # AI tool usage documentation
-├── test-reports/           # Generated test reports
-└── README.md               # Updated with your implementation
+├── documentation/          # Test strategy, setup instructions, GenAI usage
+└── test-reports/           # Generated test reports
 ```
 
 ## GenAI Documentation Template
@@ -173,7 +164,7 @@ Include in your submission:
 ## GenAI Tools Usage
 
 ### Tools Used
-- Tool Name: [ChatGPT/Copilot/Claude/etc.]
+- Tool Name: [Specify AI tool used]
 - Purpose: [Test generation/Code review/Documentation/etc.]
 - Examples: [Specific examples of AI-generated content]
 
@@ -192,7 +183,7 @@ Include in your submission:
 - **Start with API tests** - easier to set up and validate
 - **Leverage AI tools effectively** - document your usage thoroughly
 - **Focus on quality over quantity** - well-designed tests are better than many poor tests
-- **Use test containers creatively** - containerize the API itself for integration testing
+- **Use TestContainers creatively** - containerize the API itself for integration testing
 - **Handle in-memory storage** - show how you manage test data isolation
 - **Implement proper patterns** - Page Object Model for UI, proper test organization for API
 
@@ -200,7 +191,7 @@ Include in your submission:
 
 - **API Testing**: [Testcontainers](https://www.testcontainers.org/), [RestAssured](https://rest-assured.io/)
 - **UI Testing**: [Playwright](https://playwright.dev/)
-- **GenAI Tools**: ChatGPT, GitHub Copilot, Claude, Tabnine
+- **GenAI Tools**: Various AI assistants and code generation tools
 - **Containerization**: [Docker](https://docs.docker.com/)
 
 ---
